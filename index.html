@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Є-комерс компонент</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- основний контейнер -->
+  <div class="wrapper">
+
+    <!-- ліва панель -->
+    <div class="panel">
+
+      <!-- заголовок -->
+      <h1>To Go Menu</h1>
+
+      <!-- меню-список -->
+      <ul class="menu">
+
+        <!-- пункт з меню - елемент списку -->
+        <li>
+
+          <!-- зображення товару -->
+          <div class="plate">
+            <img src="./images/plate__french-fries.png" alt="French Fries with Ketchup">
+          </div>
+
+          <!-- опис товару -->
+          <div class="content">
+            <div class="menu-item">French Fries with Ketchup</div>
+            <div class="price">$2.23</div>
+
+            <!-- кнопка вибору товару -->
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="plate">
+            <img src="./images/plate__salmon-vegetables.png" alt="Salmon and Vegetables">
+          </div>
+
+          <div class="content">
+            <div class="menu-item">Salmon and Vegetables</div>
+            <div class="price">$5.12</div>
+
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="plate">
+            <img src="./images/plate__spaghetti-meat-sauce.png" alt="Spaghetti with Meat Sauce">
+          </div>
+
+          <div class="content">
+            <div class="menu-item">Spaghetti with Meat Sauce</div>
+            <div class="price">$7.82</div>
+
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="plate">
+            <img src="./images/plate__chicken-salad.png" alt="chicken-salad">
+          </div>
+
+          <div class="content">
+            <div class="menu-item">Chicken salad</div>
+            <div class="price">$4.50</div>
+
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="plate">
+            <img src="./images/plate__ravioli.png" alt="Ravioli">
+          </div>
+
+          <div class="content">
+            <div class="menu-item">Ravioli</div>
+            <div class="price">$3.17</div>
+
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="plate">
+            <img src="./images/plate__fish-sticks-fries.png" alt="fish sticks fries">
+          </div>
+
+          <div class="content">
+            <div class="menu-item">Fish Sticks Fries</div>
+            <div class="price">$5.50</div>
+
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="plate">
+            <img src="./images/plate__tortellini.png" alt="Tortellini">
+          </div>
+
+          <div class="content">
+            <div class="menu-item">Tortellini</div>
+            <div class="price">$3.73</div>
+
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="plate">
+            <img src="./images/plate__bacon-eggs.png" alt="bacon eggs">
+          </div>
+
+          <div class="content">
+            <div class="menu-item">Bacon eggs</div>
+            <div class="price">$2.12</div>
+
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+
+          <div class="plate">
+            <img src="./images/plate__fish.png" alt="fish">
+          </div>
+
+          <div class="content">
+            <div class="menu-item">Fish</div>
+            <div class="price">$4.17</div>
+
+            <button class="in-cart">
+              <img src="./images/check.svg" alt="check">
+              In Cart
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- права панель -->
+    <div class="panel cart">
+
+      <!-- заголовок -->
+      <h1>Your Cart</h1>
+      <!-- <p class="empty">Your cart is emrty</p> -->
+
+      <!-- перелік замовленого - список -->
+      <ul class="cart-summary">
+
+        <!-- перша позиція в замовлені - елемент списку -->
+        <!-- item 1 -->
+        <li>
+
+          <!-- зображення товару, кількість, опис, ціна -->
+          <div class="plate">
+            <img src="./images/plate__fish-sticks-fries.png" alt="fish sticks and fries">
+            <div class="quantity">1</div>
+          </div>
+
+          <div class="content">
+            <p class="menu-item">Fish Sticks and Fries</p>
+            <p class="price">$6.34</p>
+          </div>
+
+          <!-- елементи коригування кількості товару -->
+          <div class="quantity__wrapper">
+            <button class="decreases">
+              <img src="./images/chevron.svg" alt="decreases">
+            </button>
+            <div class="quantity">1</div>
+            <button class="increases">
+              <img src="./images/chevron.svg" alt="increases">
+            </button>
+          </div>
+
+          <!-- ціна товару -->
+          <div class="subtotal">
+            $6.34
+          </div>
+        </li>
+
+        <!-- item 2 -->
+        <li>
+
+          <!-- зображення товару, кількість, опис, ціна -->
+          <div class="plate">
+            <img src="./images/plate__fish-sticks-fries.png" alt="fish sticks and fries">
+            <div class="quantity">1</div>
+          </div>
+
+          <div class="content">
+            <p class="menu-item">Fish Sticks and Fries</p>
+            <p class="price">$6.34</p>
+          </div>
+
+          <!-- елементи коригування кількості товару -->
+          <div class="quantity__wrapper">
+            <button class="decreases">
+              <img src="./images/chevron.svg" alt="decreases">
+            </button>
+            <div class="quantity">1</div>
+            <button class="increases">
+              <img src="./images/chevron.svg" alt="increases">
+            </button>
+          </div>
+
+          <!-- ціна товару -->
+          <div class="subtotal">
+            $6.34
+          </div>
+        </li>
+      </ul>
+
+      <!-- Підсумкова інформація по сплаті -->
+      <div class="totals">
+        <div class="line-item">
+          <div class="label">Subtotal:</div>
+          <div class="amount price">$10.80</div>
+        </div>
+
+        <div class="line-item">
+          <div class="label">Tax:</div>
+          <div class="amount price">$10.80</div>
+        </div>
+
+        <div class="line-item total">
+          <div class="label">Total:</div>
+          <div class="amount price">$10.80</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
